@@ -26,7 +26,10 @@ function DataList(props) {
 			<ExpansionPanel key={index}>
 				<ExpansionPanelSummary expandIcon={<ExpandMoreIcon />}>
 					<Typography className={classes.heading}>
-						Q{index + 1}. {entry.question}
+						<b>
+							<em>Q{index + 1}.</em>
+						</b>{' '}
+						{entry.question}
 					</Typography>
 				</ExpansionPanelSummary>
 				<ExpansionPanelDetails>
