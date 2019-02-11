@@ -161,5 +161,9 @@
 	{
 		"question": "What is the maximum legal speed limit on Irish Motorways?",
 		"answer": "120 kmph or 70 mph"
+	},
+	{
+		"question": "When travelling on a road with three lanes and you do not plan to overtake, what lane should you drive in?",
+		"answer": "The leftmost lane"
 	}
 ]
