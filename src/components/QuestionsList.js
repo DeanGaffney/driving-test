@@ -6,7 +6,7 @@ import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import Typography from '@material-ui/core/Typography';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import drivingData from '../data/data.json';
+import drivingData from '../data/questions.json';
 
 const styles = (theme) => ({
 	root: {
@@ -18,7 +18,7 @@ const styles = (theme) => ({
 	}
 });
 
-function DataList(props) {
+function QuestionsList(props) {
 	const { classes } = props;
 
 	const panelList = drivingData.map((entry, index) => {
@@ -44,8 +44,8 @@ function DataList(props) {
 	return <div className={classes.root}>{panelList}</div>;
 }
 
-DataList.propTypes = {
+QuestionsList.propTypes = {
 	classes: PropTypes.object.isRequired
 };
 
-export default withStyles(styles)(DataList);
+export default withStyles(styles)(QuestionsList);
